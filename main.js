@@ -18,12 +18,12 @@ function setup(){
 }
 
 
-function modelLoded(){
+function modelLoaded(){
     console.log('PoseNet Is Initiated');
 }
 
 function gotPoses(results){
-    if(result.length > 0){
+    if(results.length > 0){
         console.log(results);
         noseX =  results[0].pose.nose.x-15;
         noseY =  results[0].pose.nose.y-15;
